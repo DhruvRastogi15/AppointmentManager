@@ -1,20 +1,10 @@
 import React, { Component } from 'react';
 
-import { View, Animated, Text, SafeAreaView, ScrollView } from 'react-native';
+import { View, Text } from 'react-native';
 import Color from '../Utils/Color'
 // import { horizontalScale, verticalScale, moderateScale, isTabDevice } from '../ReusableComponents/DeviceInfo'
 import { StackActions } from '@react-navigation/native';
-// import { Calendar } from 'react-native-calendars';
-// const tabMulFactor = isTabDevice() ? 0.25 : 0.0;
-// import DeviceInfo from 'react-native-device-info';
-// import RNOtpVerify from 'react-native-otp-verify';
-// import AttendanceUtil from '../Utils/AttendenceUtil'
-// import Toast from 'react-native-root-toast';
-// import RealmController from '../Database/Realm'
-// import WebServices from '../reusableComponents/WebServices'
-// import ProgressDialog from '../reusableComponents/ProgressDialog'
-// import Constant from '../Utils/Constants'
-// import { Buffer } from "buffer";
+
 var arr = [2020 - 12 - 16]
 
 export default class Login extends Component {
@@ -60,26 +50,6 @@ export default class Login extends Component {
                             <Text numberOfLines={2} style={{ marginTop: 3 }}>Busy</Text>
                         </View>
                     </View>
-                    {/* <Calendar
-                        style={{
-                            width: '100%', borderRadius: 5, elevation: 5, shadowColor: "#000",
-                            shadowOffset: {
-                                width: 0,
-                                height: 2,
-                            },
-                            shadowOpacity: 0.23,
-                            shadowRadius: 2.62
-                        }}
-                        //   current={this.state.currentDate}
-                        markingType={'custom'}
-                          markedDates={this.state.marked}
-                        //   onMonthChange={(month) => this.onMonthChnage(month)}
-                        //   renderArrow={this.renderArrow}
-                        onDayPress={(day) => this.checkDataForDay(day.dateString)}
-                        hideExtraDays={true}
-                    //   disableArrowRight={this.state.disableArrowRight}
-                    //   disableArrowLeft={this.state.disableArrowLeft}
-                    /> */}
                 </View>
             </View>
         );

@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, StatusBar, Image, Text } from 'react-native';
 import StringConstants from '../Utils/StringConstant'
-// import Color from '../Utils/Color'
-// import { horizontalScale, verticalScale } from '../reusableComponents/DeviceInfo'
 import { StackActions } from '@react-navigation/native';
-// import AttendAnceUtil from '../Utils/AttendenceUtil'
-// import RealmController from '../Database/Realm'
-// import WebServices from '../reusableComponents/WebServices'
 class SplashScreen extends Component {
 
     constructor(props) {

@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 
 import StringConstants from './StringConstant';
-import Constants from '../Utils/Constants'
+import Constants from './Constants'
 import RealmController from '../Database/Realm'
 
 class AttendenceUtil {
