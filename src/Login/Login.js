@@ -57,29 +57,6 @@ export default class Login extends Component {
         let requestObj = {}
         requestObj.type = this.state.type
         requestObj.mobile_number = this.state.mobileNumber
-
-        // WebServices.getOtp_service(requestObj, response => {
-        //     if (response.status_code == 404 || response.status_code == 403 || response.status_code == 500) {
-        //         this.setState({ loading: false })
-        //         Toast.show(response.error)
-
-        //     }
-        //     else if (response.status == 'success') {
-        //         if (Platform.OS === 'ios') {
-        //             this.setState({ loading: false })
-        //         }
-        //         this.setState({ loading: false })
-        //         this.setState({ isMobileNumberEntered: true, })
-        //     }
-        //     else if (response.status == 'error') {
-        //         this.setState({ loading: false })
-        //         Toast.show(response.data)
-
-        //     } else {
-        //         this.setState({ loading: false })
-        //         Toast.show(StringConstant.somethingWentWrong)
-        //     }
-        // })
     }
     setFirstTextinput = (text) => {
         this.setState({ firstNum: text }, () => {
@@ -121,7 +98,6 @@ export default class Login extends Component {
     }
 
     callLoginAPI() {
-        alert('d')
         if (AppointmentManagerUtil.isEmptyValue(this.state.firstNum) || AppointmentManagerUtil.isEmptyValue(this.state.secondNum)
             || AppointmentManagerUtil.isEmptyValue(this.state.thirdNum) || AppointmentManagerUtil.isEmptyValue(this.state.fourthNum)) {
             Toast.show(StringConstants.plzEnterOtpNum)
@@ -139,7 +115,9 @@ export default class Login extends Component {
     }
 
     callLoginService() {
-        alert('d')
+        this.props.navigation.dispatch(
+            StackActions.replace('Home')
+        );
     }
     callRegisterUserApi = () => {
         alert('a')

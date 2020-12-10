@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import Color from '../Utils/Color'
 
-var arr = [2020 - 12 - 16]
 
-export default class Login extends Component {
+export default class Home extends Component {
 
     constructor(props) {
         super(props);

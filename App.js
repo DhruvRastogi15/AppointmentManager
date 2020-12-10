@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import SplashScreen from './src/Login/SplashScreen'
 import LoginScreen from './src/Login/Login'
 import RegistrationScreen from './src/Login/RegistrationScreen'
+import Home from './src/Home/Home'
 import { FontFix } from './src/Utils/FontFix'
 import Color from './src/Utils/Color'
 FontFix()
@@ -20,6 +21,17 @@ const App = () => {
         <Stack.Screen name='RegistrationScreen' component={RegistrationScreen}
           options={{
             title: 'Registration',
+            headerTitleAlign: 'center',
+            headerBackTitle: 'Back',
+            headerStyle: {
+              backgroundColor: Color.AMBlue,
+            },
+            headerTintColor: Color.White,
+          }} />
+
+        <Stack.Screen name='Home' component={Home}
+          options={{
+            title: 'Home',
             headerTitleAlign: 'center',
             headerBackTitle: 'Back',
             headerStyle: {
