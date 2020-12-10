@@ -150,7 +150,7 @@ export default class Login extends Component {
                         />
                         <TouchableOpacity
                             style={{
-                                marginTop: 60, width: "90%", height: 56, justifyContent: 'center', alignItems: 'center', backgroundColor: Color.AMBlue, borderRadius: 5
+                                marginTop: 60, width: "90%", height: 56, justifyContent: 'center', alignItems: 'center', backgroundColor: Color.AMOrange, borderRadius: 5
                             }}
                             onPress={() => {
                                 this.getOTP()
@@ -203,7 +203,7 @@ export default class Login extends Component {
                         <TouchableOpacity
 
                             style={{
-                                marginTop: 60, width: "90%", height: 56, justifyContent: 'center', alignItems: 'center', backgroundColor: Color.AMBlue, borderRadius: 5
+                                marginTop: 60, width: "90%", height: 56, justifyContent: 'center', alignItems: 'center', backgroundColor: Color.AMOrange, borderRadius: 5
                             }}
                             onPress={() => {
                                 this.callLoginAPI()

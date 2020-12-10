@@ -24,7 +24,7 @@ const App = () => {
             headerTitleAlign: 'center',
             headerBackTitle: 'Back',
             headerStyle: {
-              backgroundColor: Color.AMBlue,
+              backgroundColor: Color.AMOrange,
             },
             headerTintColor: Color.White,
           }} />
@@ -35,7 +35,7 @@ const App = () => {
             headerTitleAlign: 'center',
             headerBackTitle: 'Back',
             headerStyle: {
-              backgroundColor: Color.AMBlue,
+              backgroundColor: Color.AMOrange,
             },
             headerTintColor: Color.White,
           }} />

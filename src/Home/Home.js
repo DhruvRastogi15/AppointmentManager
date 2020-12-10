@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import Color from '../Utils/Color'
+import { createDrawerNavigator } from '@react-navigation/drawer';
+const Drawer = createDrawerNavigator();
+
+function MyDrawer() {
+  return (
+    <Drawer.Navigator>
+      <Drawer.Screen name="Feed" component={Feed} />
+      <Drawer.Screen name="Article" component={Article} />
+    </Drawer.Navigator>
+  );
+}
 
 
 export default class Home extends Component {
