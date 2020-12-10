@@ -28,7 +28,8 @@ class SplashScreen extends Component {
         return (
             <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1, backgroundColor: Color.White }}>
                 <Image
-                    source={require('../Assets/AppLogo.png')}
+                    style={{ height: 200, width: 200 }}
+                    source={require('../Assets/Tattoosphere.png')}
                     resizeMode="contain">
                 </Image>
             </View>

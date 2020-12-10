@@ -129,11 +129,12 @@ export default class Login extends Component {
             <View style={{ flex: 1, backgroundColor: Color.White }}>
                 <View style={{ marginTop: 10, alignItems: 'center', justifyContent: 'center', height: '50%' }}>
                     <Image
-                        source={require('../Assets/AppLogo.png')}
+                        style={{ height: 200, width: 200, marginVertical: 20 }}
+                        source={require('../Assets/Tattoosphere.png')}
                         resizeMode="contain">
                     </Image>
                     <View style={{ marginHorizontal: 20 }}>
-                        <Text style={{ fontSize: 20, fontWeight: 'bold', color: Color.Silver }}>{StringConstants.appointmentManager}</Text>
+                        <Text style={{ fontSize: 20, fontWeight: 'bold', color: Color.Silver }}>Tattoosphere Appointments</Text>
                     </View>
                 </View>
                 {this.state.isMobileNumberEntered == false ?
@@ -211,16 +212,6 @@ export default class Login extends Component {
                             <Text style={{ fontSize: 22, textAlign: 'center', color: Color.White }}>{StringConstants.verifyOtp}</Text>
                         </TouchableOpacity>
                     </View>
-                }
-                {!this.state.isMobileNumberEntered ?
-                    <View style={{ height: 55, width: '100%', position: 'absolute', bottom: 0, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                        <Text numberOfLines={1} style={{ fontSize: 14, fontWeight: '500', color: 'silver' }}>{StringConstants.dontHaveAccount}</Text>
-                        <TouchableOpacity onPress={() => this.registerUser()}>
-                            <Text numberOfLines={1} style={{ fontSize: 16, fontWeight: '500', color: Color.AMBlue }}> {StringConstants.registerNow}</Text>
-                        </TouchableOpacity>
-                    </View>
-                    :
-                    null
                 }
             </View>
         );
